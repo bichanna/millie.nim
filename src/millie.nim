@@ -12,7 +12,7 @@ const units = [
 
 
 proc millify*(
-    value: int64,
+    value: SomeNumber,
     precision: int = 1,
     lowercase: bool = false,
     space: bool = false,
@@ -36,6 +36,10 @@ proc millify*(
   divideTillEnd(val):
     val = res
     unitIndex += 1
+
+  # The number is too big for Millie to handle. So,
+  # Millie just returns it as is.
+  if len(units) <= unitIndex: return $value
 
   # round the decimal number up to the desired precision
   let rounded = val.round(precision)
