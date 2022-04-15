@@ -10,21 +10,20 @@ A Nim package (the same stuff as the other [Millie](https://github.com/bichanna/
 For more examples, see [example](https://github.com/bichanna/millie.nim/tree/master/example) directory.
 
 ## Usage
-```dart
-import 'package:millie/millie.dart';
+```nim
+import millie;
 
-void main() {
-    millify(4200); // 4.2K
+millify(4200) # 4.2K
     
-    millify(10000, lowercase: true); // 10k
+millify(10000, lowercase: true) // 10k
     
-    millify(
-        1250000,
-        space: true,
-        lowercase: true,
-        precision: 3
-    ); // 1.25 m
-}
+millify(
+    1250000,
+    space: true,
+    lowercase: true,
+    precision: 3
+) // 1.25 m
+
 ```
 
 ## Options
