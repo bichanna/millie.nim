@@ -15,13 +15,13 @@ import millie;
 
 millify(4200) # 4.2K
     
-millify(10000, lowercase: true) // 10k
+millify(10000, lowercase=true) // 10k
     
 millify(
     1250000,
-    space: true,
-    lowercase: true,
-    precision: 3
+    space=true,
+    lowercase=true,
+    precision=3
 ) // 1.25 m
 
 ```
