@@ -1,5 +1,5 @@
 # Millie
-A Nim package (the same stuff as the other [Millie](https://github.com/bichanna/millie) in Dart) that converts big numbers to what's pleasant to see (an adorable, little girl, perhaps?).
+A Nim package that converts big numbers to what's pleasant to see (an adorable, little girl, perhaps?).
 
 | 🤢 Before | ✨ After |
 | ----------- | ----------- |
